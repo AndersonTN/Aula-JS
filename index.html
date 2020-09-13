@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body onload="load()"> <!- chama a função load quando o body carregar ->
+        <button type="button" onclick="clicou()">Clique Aqui</button> <!- chamando a função clicou no js ->
+        <h3 id="agradecimento" onclick="redirecionar()"></h3> <!- chamando a função redirecionar ao clicar no agradecimento ->
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p> <!- primeiro metodo, contudo, so funcionaria para esse "passe o mouse aqui", não funcionaria em outro ->
+        <p id="mousemove2" onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui 2</p>
+        <p id="mousemove2" onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui 2</p>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
+
+</html>
